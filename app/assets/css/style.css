@@ -435,10 +435,10 @@ header {
       opacity: 0;
       transition: opacity 300ms ease; }
       header #mobile-open-close-btn .glyph.open {
-        background-image: url("../assets/img/toggle-open.svg");
+        background-image: url("../../assets/img/toggle-open.svg");
         opacity: 1; }
       header #mobile-open-close-btn .glyph.close {
-        background-image: url("../assets/img/toggle-close.svg"); }
+        background-image: url("../../assets/img/toggle-close.svg"); }
       .nav-open header #mobile-open-close-btn .glyph.open {
         opacity: 0; }
       .nav-open header #mobile-open-close-btn .glyph.close {
@@ -480,7 +480,7 @@ nav {
     right: 0;
     width: 48px;
     height: 48px;
-    background-image: url("../assets/img/menu-item-chevron.svg");
+    background-image: url("../../assets/img/menu-item-chevron.svg");
     background-position: 100% 50%;
     background-repeat: no-repeat;
     transition: transform 300ms; }
@@ -512,7 +512,7 @@ nav {
   background-color: #333;
   -ms-transform: translateX(0);
       transform: translateX(0);
-  transition: transform 400ms, opacity 400ms;
+  transition: transform 300ms, opacity 300ms;
   padding: 0 24px 24px 24px;
   text-align: justify; }
   .nav-open #main {

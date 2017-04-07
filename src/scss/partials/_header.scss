@@ -38,12 +38,12 @@ header {
 			transition: opacity 300ms ease;
 
 			&.open {
-				background-image: url('../assets/img/toggle-open.svg');
+				background-image: url('../../assets/img/toggle-open.svg');
 				opacity: 1;
 			}
 
 			&.close {
-				background-image: url('../assets/img/toggle-close.svg');
+				background-image: url('../../assets/img/toggle-close.svg');
 			}
 
 			.nav-open &.open {
