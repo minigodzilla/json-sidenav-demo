@@ -408,9 +408,8 @@ header {
   width: 180vw;
   height: 60px;
   background-color: #252525;
-  -ms-transform: translateX(-80vw);
-      transform: translateX(-80vw);
-  transition: transform 400ms;
+  transform: translate3d(-80vw, 0, 0);
+  transition: transform 300ms;
   z-index: 11; }
   .nav-open header {
     transform: translate3d(0, 0, 0); }
@@ -434,12 +433,12 @@ header {
       width: 100%;
       height: 100%;
       opacity: 0;
-      transition: opacity 400ms ease; }
+      transition: opacity 300ms ease; }
       header #mobile-open-close-btn .glyph.open {
-        background-image: url("/assets/img/toggle-open.svg");
+        background-image: url("../assets/img/toggle-open.svg");
         opacity: 1; }
       header #mobile-open-close-btn .glyph.close {
-        background-image: url("/assets/img/toggle-close.svg"); }
+        background-image: url("../assets/img/toggle-close.svg"); }
       .nav-open header #mobile-open-close-btn .glyph.open {
         opacity: 0; }
       .nav-open header #mobile-open-close-btn .glyph.close {
@@ -452,7 +451,7 @@ nav {
   height: 100vh;
   -ms-transform: translateX(-80vw);
       transform: translateX(-80vw);
-  transition: transform 400ms;
+  transition: transform 300ms;
   z-index: 10;
   background-color: #333;
   overflow: auto; }
@@ -481,10 +480,10 @@ nav {
     right: 0;
     width: 48px;
     height: 48px;
-    background-image: url("/assets/img/menu-item-chevron.svg");
+    background-image: url("../assets/img/menu-item-chevron.svg");
     background-position: 100% 50%;
     background-repeat: no-repeat;
-    transition: transform 200ms; }
+    transition: transform 300ms; }
   nav li.has-child-nav.active a .glyph-span {
     -ms-transform: rotate(-180deg);
         transform: rotate(-180deg); }
@@ -493,7 +492,7 @@ nav {
     padding: 0;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 400ms; }
+    transition: max-height 300ms; }
   nav li.active ul {
     max-height: 320px; }
   nav li ul a {
@@ -574,8 +573,8 @@ nav {
     position: static;
     width: 100%;
     height: 60px;
-    -ms-transform: translateX(0);
-        transform: translateX(0);
+    -ms-transform: none;
+        transform: none;
     transition: none; }
   .nav-open header {
     -ms-transform: none;
@@ -606,14 +605,14 @@ nav {
       line-height: 60px; }
     nav li {
       float: left;
-      transition: background-color 200ms, color 200ms; }
+      transition: background-color 300ms, color 300ms; }
       nav li:hover {
         background-color: #333; }
       nav li a {
         color: #278;
         padding: 0 24px;
         font-size: 16px;
-        transition: background-color 200ms, color 200ms; }
+        transition: background-color 300ms, color 300ms; }
       nav li:hover a {
         background-color: #333;
         color: #d9d9d9; }
@@ -628,7 +627,7 @@ nav {
         max-height: none;
         background-color: #333;
         line-height: 48px;
-        transition: opacity 200ms; }
+        transition: opacity 300ms; }
         nav li ul li:hover a {
           background-color: #404040; }
       nav li:hover ul {
