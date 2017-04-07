@@ -1,0 +1,61 @@
+header {
+	position: fixed;
+	top: 0;
+	width: 180vw;
+	height: 60px;
+	background-color: $header-bg;
+	transform: translate3d(-80vw,0,0);
+	transition: transform 300ms;
+	z-index: 11;
+
+	.nav-open & {
+		transform: translate3d(0,0,0);
+	}
+
+	h1 {
+		position: absolute;
+		margin: 0;
+		font-family: 'Podkova',sans-serif;
+		font-size: 21px;
+		line-height: 60px;
+		padding-left: 24px;
+	}
+
+	#mobile-open-close-btn {
+		width: 20vw;
+		height: 60px;
+		position: absolute;
+		top: 0;
+		left: 80vw;
+
+		.glyph {
+			position: absolute;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 300ms ease;
+
+			&.open {
+				background-image: url('/assets/img/toggle-open.svg');
+				opacity: 1;
+			}
+
+			&.close {
+				background-image: url('/assets/img/toggle-close.svg');
+			}
+
+			.nav-open &.open {
+				opacity: 0;
+			}
+
+			.nav-open &.close {
+				opacity: 1;
+			}
+
+		}
+
+	}
+
+}

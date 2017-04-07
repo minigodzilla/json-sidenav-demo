@@ -1,0 +1,20 @@
+header {
+  position: static;
+  width: 100%;
+  height: 60px;
+  transform: none;
+  transition: none;
+}
+
+.nav-open header {
+  transform: none;
+}
+
+	header h1 {
+	  line-height: 60px;
+	}
+
+	header #mobile-open-close-btn {
+	  display: none;
+	}
+

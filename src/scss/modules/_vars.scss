@@ -1,0 +1,31 @@
+$base : #F7F6F0;
+$darken : darken(#F7F6F0 , 30%);
+$back: darken(#F7F6F0, 40%);
+
+// swatch color vars
+
+$black: #000;
+$gray-15: #252525;
+$gray-20: #333;
+$gray-25: #404040;
+$gray-50: #808080;
+$gray-75: #bfbfbf;
+$gray-80: #ccc;
+$gray-85: #d9d9d9;
+$accent-blue: #278;
+
+// semantic color vars
+
+$accent-color: $accent-blue;
+$body-bg: $black;
+$base-bg: $gray-20;
+$base-color: $gray-50;
+$header-bg: $gray-15;
+$nav-bg: $gray-20;
+$nav-color: $gray-85;
+$child-nav-color: $gray-50;
+$child-nav-color-hover: $gray-85;
+$desktop-nav-color: $accent-blue;
+$desktop-nav-color-hover: $gray-85;
+$desktop-nav-bg-hover: $gray-25;
+$main-heading-color: $gray-85;

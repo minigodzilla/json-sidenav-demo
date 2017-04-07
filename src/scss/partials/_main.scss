@@ -1,0 +1,46 @@
+#main {
+	margin-top: 60px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: $base-bg;
+	transform: translateX(0);
+	transition: transform 400ms, opacity 400ms;
+	padding: 0 24px 24px 24px;
+	text-align: justify;
+
+	.nav-open & {
+		transform: translateX(80vw);
+		opacity: 0.5;
+		position: fixed;
+	}
+
+	#hero-image {
+		height: 240px;
+		position: relative;
+		overflow: hidden;
+		margin: 0 -24px;
+
+		img {
+			position: absolute;
+			min-width: 480px;
+			max-width: 100%;
+			height: auto;
+			min-height: auto;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+	}
+
+	h2 {
+		color: $main-heading-color;
+		font-family: 'Fira Sans',sans-serif;
+		font-weight: 800;
+		font-size: 44px;
+		line-height: 48px;
+		text-align: left;
+		margin: 46px 0 33px 0;
+	}
+
+}

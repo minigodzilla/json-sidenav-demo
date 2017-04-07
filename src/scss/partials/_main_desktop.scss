@@ -1,0 +1,49 @@
+#main {
+  margin-top: 0;
+  background-color: transparent;
+  transform: none;
+  padding: 0;
+  transition: none;
+  text-align: left;
+}
+
+.nav-open #main {
+  transform: none;
+  opacity: 1;
+  position: static;
+}
+	#main #hero-image {
+	  height: 640px;
+	  position: relative;
+	  overflow: hidden;
+	  margin: 0;
+	}
+
+		#main #hero-image img {
+		  position: absolute;
+		  min-width: 100%;
+		  max-width: initial;
+		  height: auto;
+		  min-height: 640px;
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%,-50%);
+		}
+
+	#main h2 {
+	  position: absolute;
+	  width: 820px;
+	  text-align: center;
+	  font-size: 120px;
+	  line-height: 132px;
+	  margin: 0;
+	  left: 50%;
+	  top: 392px;
+	  transform: translate(-50%,-50%);
+	}
+
+	#main #main-section-copy {
+		max-width: 920px;
+		margin: 0 auto;
+		padding: 60px 24px 30px 24px;
+	}
